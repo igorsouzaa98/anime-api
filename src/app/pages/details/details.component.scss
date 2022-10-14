@@ -1,0 +1,19 @@
+@import "../../../config-scss/rem-calc.scss";
+
+:host {
+  main {
+    margin-top: rem-calc(40);
+    .poster {
+      width: rem-calc(360);
+    }
+    .info {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+    }
+    p {
+      margin-top: rem-calc(10);
+      margin-right: rem-calc(10);
+    }
+  }
+}

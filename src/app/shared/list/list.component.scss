@@ -1,0 +1,23 @@
+@import "../../../config-scss/rem-calc.scss";
+:host {
+  .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: rem-calc(20) 0;
+
+    .card {
+      width: rem-calc(200);
+      margin: 10px 10px;
+    }
+    h1 {
+      font-weight: 700;
+    }
+    p {
+      margin-top: rem-calc(10);
+    }
+    a {
+      color: var(--laranja);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<section class="list">
+  <p-card class="card" *ngFor="let anime of getAllAnimes">
+    <ng-template pTemplate="header">
+      <img alt="Card" [src]="anime.attributes.posterImage.original" />
+    </ng-template>
+    <a [routerLink]="['details', anime.id]">
+      <h1>{{ anime.attributes.titles.en }}</h1>
+    </a>
+    <p>{{ anime.attributes.totalLength }} Episodios</p>
+  </p-card>
+</section>

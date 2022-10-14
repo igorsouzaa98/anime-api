@@ -1,1 +1,24 @@
-<p>details works!</p>
+<app-header></app-header>
+<main>
+  <p-card
+    [style]="{ width: '100%', height: '100%' }"
+    header="{{ anime[0].data.attributes.titles.en }}"
+  >
+    <ng-template pTemplate="header">
+      <img alt="Card" [src]="anime[0].data.attributes.coverImage.original" />
+    </ng-template>
+    <section class="info">
+      <img
+        class="poster"
+        [src]="anime[0].data.attributes.posterImage.original"
+        alt=""
+      />
+      <p>
+        {{ anime[0].data.attributes.synopsis }}
+      </p>
+    </section>
+    <ng-template pTemplate="footer">
+      <p-button [routerLink]="['']" label="Voltar"></p-button>
+    </ng-template>
+  </p-card>
+</main>
